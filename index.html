@@ -14,44 +14,107 @@
     <title></title>
   </head>
   <body>
-	<div style="position: relative; margin: auto auto; width: 500px; border: 3px solid red;">
+	<div style="position: relative; margin: 25px auto; width: 500px;">
     <div class="row">
       <form class="col s12">
+
+        <div class="row">
+          <div class="input-field col s12">
+            <select>
+              <option value="" disabled selected>Choose your title</option>
+              <option value="1">Mr.</option>
+              <option value="2">Mrs.</option>
+              <option value="3">Ms.</option>
+              <option value="4">Other</option>
+            </select>
+            <label>Title</label>
+          </div>
+        </div>
+
         <div class="row">
           <div class="input-field col s6">
-          <input placeholder="Placeholder" id="first_name" type="text" class="validate" /> 
+          <input id="first_name" type="text" class="validate" /> 
           <label for="first_name">First Name</label></div>
           <div class="input-field col s6">
-          <input id="last_name" type="text" class="validate" /> 
+          <input id="last_name" type="text" class="validate" />
           <label for="last_name">Last Name</label></div>
         </div>
+
         <div class="row">
           <div class="input-field col s12">
-          <input disabled="disabled" value="I am not editable" id="disabled" type="text" class="validate" /> 
-          <label for="disabled">Disabled</label></div>
+          <input id="date_of_birth" type="text" class="datepicker">
+          <label for="date_of_birth">Date of Birth</label>
+          </div>
         </div>
+
         <div class="row">
           <div class="input-field col s12">
-          <input id="password" type="password" class="validate" /> 
-          <label for="password">Password</label></div>
+          <input id="number_of_siblings" type="text" class="validate" /> 
+          <label for="number_of_siblings">Number of Siblings</label></div>
         </div>
+
         <div class="row">
           <div class="input-field col s12">
-          <input id="email" type="email" class="validate" /> 
+            <select>
+              <option value="" disabled>Choose your highest school qualification</option>
+              <option value="1" selected>Not specified</option>
+              <option value="2">Without shool graduation</option>
+              <option value="3">Grundskole</option>
+              <option value="4">Efterskole</option>
+              <option value="5">Stx</option>
+              <option value="6">Htx</option>
+              <option value="7">Hhx</option>
+              <option value="8">Hf</option>
+            </select>
+            <label>School Qualification</label>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="input-field col s12">
+          <input id="year_of_school_graduation" type="text" class="validate" /> 
+          <label for="year_of_school_graduation">Year of School Graduation</label></div>
+        </div>
+
+        <div class="row">
+          <div class="input-field col s12">
+            <select>
+              <option value="" selected disabled>Choose your favorite sport</option>
+              <option value="1">Tennis</option>
+              <option value="2">Soccer</option>
+              <option value="3">Badminton</option>
+              <option value="4">Handball</option>
+              <option value="5">Fitness</option>
+              <option value="6">Gymnastik</option>
+              <option value="7">Svømning</option>
+              <option value="8">Golf</option>
+              <option value="9">Ridning</option>
+              <option value="10">Cykling</option>
+            </select>
+            <label>Favorite Sport</label>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="input-field col s12">
+          <input placeholder ="Gade, nummer, postnummer, by" id="address" type="text" class="validate" /> 
+          <label for="address">Address</label></div>
+        </div>
+
+        <div class="row">
+          <div class="input-field col s12">
+          <input placeholder ="example@example.com" id="email" type="email" class="validate" /> 
           <label for="email">Email</label></div>
-        </div>
-        <div class="row">
-          <div class="col s12">This is an inline input field:
-          <div class="input-field inline">
-          <input id="email_inline" type="email" class="validate" /> 
-          <label for="email_inline">Email</label> 
-          <span class="helper-text" data-error="wrong" data-success="right">Helper text</span></div></div>
         </div>
       </form>
     </div>
 	</div>
     
 	<!--JavaScript at end of body for optimized loading-->
-    <script type="text/javascript" src="js/materialize.min.js"></script>
+  <!--<script type="text/javascript" src="js/materialize.min.js"></script>-->
+  <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <script src="js/materialize.js"></script>
+  <script src="js/init.js"></script>
+  <!--<script src="js/customjs.js"></script>-->
   </body>
 </html>
