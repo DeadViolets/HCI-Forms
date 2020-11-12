@@ -14,6 +14,8 @@
     <title></title>
   </head>
   <body>
+    <br>
+    <a class="waves-effect waves-light btn" id="start_button" style="position: relative; left: 600px;" onclick="startTimer()">Start</a>
 	<div style="position: relative; margin: 25px auto; width: 500px;">
     <div class="row">
       <form class="col s12">
@@ -78,21 +80,77 @@
 
         <div class="row">
           <div class="input-field col s12">
-            <select>
-              <option value="" selected disabled>Choose your favorite sport</option>
-              <option value="1">Tennis</option>
-              <option value="2">Soccer</option>
-              <option value="3">Badminton</option>
-              <option value="4">Handball</option>
-              <option value="5">Fitness</option>
-              <option value="6">Gymnastik</option>
-              <option value="7">Svømning</option>
-              <option value="8">Golf</option>
-              <option value="9">Ridning</option>
-              <option value="10">Cykling</option>
-            </select>
-            <label>Favorite Sport</label>
+            <label>Favorite Sports</label>
+            <br>
+              <form action="#">
+              	<p>
+              		<label>
+              			<input type="checkbox" />
+              			<span>Tennis</span>
+              		</label>
+              	</p>
+              	<p>
+              		<label>
+              			<input type="checkbox" />
+              			<span>Soccer</span>
+              		</label>
+              	</p>
+              	<p>
+              		<label>
+              			<input type="checkbox" />
+              			<span>Badminton</span>
+              		</label>
+              	</p>
+              	<p>
+              		<label>
+              			<input type="checkbox" />
+              			<span>Handball</span>
+              		</label>
+              	</p>
+              	<p>
+              		<label>
+              			<input type="checkbox" />
+              			<span>Fitness</span>
+              		</label>
+              	</p>
+              	<p>
+              		<label>
+              			<input type="checkbox" />
+              			<span>Gymnastik</span>
+              		</label>
+              	</p>
+              	<p>
+              		<label>
+              			<input type="checkbox" />
+              			<span>Svømning</span>
+              		</label>
+              	</p>
+              	<p>
+              		<label>
+              			<input type="checkbox" />
+              			<span>Golf</span>
+              		</label>
+              	</p>
+              	<p>
+              		<label>
+              			<input type="checkbox" />
+              			<span>Ridning</span>
+              		</label>
+              	</p>
+              	<p>
+              		<label>
+              			<input type="checkbox" />
+              			<span>Cykling</span>
+              		</label>
+              	</p>
+              </form>
           </div>
+        </div>
+
+        <div class="row">
+          <div class="input-field col s12">
+          <input placeholder ="Red" id="favorite_colour" type="text" class="validate" /> 
+          <label for="favorite_colour">Favorite colour</label></div>
         </div>
 
         <div class="row">
@@ -109,6 +167,9 @@
       </form>
     </div>
 	</div>
+    
+    <a class="waves-effect waves-light btn" id="end_button" style="position: relative; left: 800px;" onclick="endTimer()">End</a>
+    <p id="p_time" style="position: relative; left: 1000px;">hej</p>
     
 	<!--JavaScript at end of body for optimized loading-->
   <!--<script type="text/javascript" src="js/materialize.min.js"></script>-->
